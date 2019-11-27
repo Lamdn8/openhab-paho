@@ -1,0 +1,29 @@
+version: "2.2"
+services:
+  openhab:
+    image: openhab/openhab:latest
+    restart: always
+    ports: 
+      - 8000:8080
+      - 8101:8101
+      - 5007:5007
+    networks:
+      app_net:
+        ipv4_address: 168.0.0.10
+
+#  mosuitto:
+#    image: eclipse-mosquitto:latest
+#    restart: always
+#    ports: 
+#      - 1883:1883
+#      - 9001:9001
+#    networks:
+#      app_net:
+#        ipv4_address: 168.0.0.20
+
+networks:
+  app_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: "168.0.0.0/24"
