@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/iot.iml" filepath="$PROJECT_DIR$/iot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/openhab-paho.iml" filepath="$PROJECT_DIR$/openhab-paho.iml" />
     </modules>
   </component>
 </project>

@@ -24,3 +24,5 @@ hs_err_pid*
 
 # data folder
 debs40houses16h/
+out/*
+paho*

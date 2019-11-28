@@ -7,7 +7,7 @@ import org.eclipse.paho.client.mqttv3.MqttMessage;
 public class OpenhabClient {
     private MqttClient client;
     private MqttConnectOptions mqttConnectOptions;
-    private String topic;
+    private String topic = "topic1";
     private String url;
     private String clientId;
     private String username;
@@ -27,8 +27,8 @@ public class OpenhabClient {
     private static MqttConnectOptions setMqttConnectOptions(String username, String password){
         MqttConnectOptions connOpts = new MqttConnectOptions();
         connOpts.setCleanSession(true);
-        connOpts.setUserName(username);
-        connOpts.setPassword(password.toCharArray());
+//        connOpts.setUserName(username);
+//        connOpts.setPassword(password.toCharArray());
         return connOpts;
     }
 

@@ -19,9 +19,11 @@ public class Main {
 //            OpenhabClient client = new OpenhabClient("tcp://168.0.0.10:5007",
 //                    "mqtt:topic:1a287dd1:a1",
 //                    "javasample");
-            OpenhabClient client = new OpenhabClient("tcp://168.0.0.10:1883",
+            OpenhabClient client = new OpenhabClient("tcp://test.mosquitto.org:1883",
                     "openhab",
                     "mypasswd");
+
+            client.publishMessage("this is data");
 
         } catch (Exception e){
             e.printStackTrace();
